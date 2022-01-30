@@ -1,14 +1,9 @@
-import base64
 import logging
-import random
 import re
-import time
-from urllib.parse import urlparse
 
-from streamlink.plugin import Plugin, PluginArgument, PluginArguments, pluginmatcher
+from streamlink.plugin import Plugin, pluginmatcher
 from streamlink.plugin.api import validate
 from streamlink.stream.hls import HLSStream
-from streamlink.utils.parse import parse_qsd
 
 log = logging.getLogger(__name__)
 
