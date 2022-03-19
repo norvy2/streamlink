@@ -1,3 +1,9 @@
+"""
+$description Russian live streaming and video hosting social platform.
+$url vk.com
+$type live, vod
+"""
+
 import logging
 import re
 from urllib.parse import parse_qsl, unquote, urlparse

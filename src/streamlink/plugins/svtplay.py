@@ -1,3 +1,11 @@
+"""
+$description Live TV channels and video on-demand service from SVT, a Swedish public, state-owned broadcaster.
+$url svtplay.se
+$url oppetarkiv.se
+$type live, vod
+$region Sweden
+"""
+
 import logging
 import re
 from urllib.parse import parse_qsl, urlparse

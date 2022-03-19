@@ -1,3 +1,11 @@
+"""
+$description Global live streaming and video hosting social platform owned by Google.
+$url youtube.com
+$url youtu.be
+$type live, vod
+$notes Protected videos are not supported
+"""
+
 import json
 import logging
 import re

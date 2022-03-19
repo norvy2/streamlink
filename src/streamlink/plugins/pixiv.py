@@ -1,3 +1,9 @@
+"""
+$description Global live streaming platform for the creative community.
+$url sketch.pixiv.net
+$type live
+"""
+
 import logging
 import re
 

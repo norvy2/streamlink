@@ -1,3 +1,10 @@
+"""
+$description Saudi Arabian live TV channels from Rotana Media Group, including Classic, Clip, Comedy, Drama, Kids and LBC.
+$url rotana.net
+$type live
+$region Saudi Arabia
+"""
+
 import logging
 import re
 

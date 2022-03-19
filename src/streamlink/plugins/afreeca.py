@@ -1,10 +1,15 @@
+"""
+$description TV and live video game broadcasts, artist performances and personal daily-life video blogs & shows.
+$url play.afreecatv.com
+$type live
+"""
+
 import logging
 import re
 
 from streamlink.plugin import Plugin, PluginArgument, PluginArguments, pluginmatcher
 from streamlink.plugin.api import validate
-from streamlink.stream.hls import HLSStream
-from streamlink.stream.hls import HLSStreamReader, HLSStreamWriter
+from streamlink.stream.hls import HLSStream, HLSStreamReader, HLSStreamWriter
 
 log = logging.getLogger(__name__)
 

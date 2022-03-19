@@ -1,3 +1,9 @@
+"""
+$description Japanese live streaming service used primarily by Japanese idols & voice actors and their fans.
+$url showroom-live.com
+$type live
+"""
+
 import logging
 import re
 

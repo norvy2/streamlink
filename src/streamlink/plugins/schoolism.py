@@ -1,3 +1,10 @@
+"""
+$description An online learning community for artists, created by artists.
+$url schoolism.com
+$type vod
+$account Login and subscription required
+"""
+
 import logging
 import re
 from functools import partial

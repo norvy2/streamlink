@@ -1,3 +1,9 @@
+"""
+$description Japanese live streaming and video hosting social platform.
+$url openrec.tv
+$type live, vod
+"""
+
 import logging
 import re
 

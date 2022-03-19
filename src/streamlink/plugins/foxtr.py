@@ -1,3 +1,9 @@
+"""
+$description Turkish live TV channel owned by Fox Network.
+$url fox.com.tr
+$type live
+"""
+
 import re
 
 from streamlink.plugin import Plugin, pluginmatcher

@@ -1,3 +1,10 @@
+"""
+$description Video content of the proceedings and business of The United States Senate.
+$url senate.gov
+$type vod
+$notes Supports hearing streams
+"""
+
 import logging
 import re
 from urllib.parse import parse_qsl, urlparse

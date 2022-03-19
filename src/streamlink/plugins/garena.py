@@ -1,3 +1,9 @@
+"""
+$description Live video game broadcasts of Garena member games.
+$url garena.live
+$type live
+"""
+
 import re
 
 from streamlink.plugin import Plugin, pluginmatcher

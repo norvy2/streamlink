@@ -1,3 +1,9 @@
+"""
+$description Artist and fan live streaming for live video game broadcasts and individual live streams.
+$url fanxing.kugou.com
+$type live
+"""
+
 import logging
 import re
 import time
