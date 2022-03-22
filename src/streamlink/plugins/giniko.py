@@ -3,7 +3,7 @@ import re
 
 from streamlink.plugin import Plugin, pluginmatcher
 from streamlink.plugin.api import validate
-from streamlink.stream.hls import HLSStream
+from streamlink.stream.http import HTTPStream
 
 log = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ class Giniko(Plugin):
             log.error("Not a correct 'giniko' iframe")
             return
 
-        return {"live": HLSStream(self.session, hls_url)}
+        return {"live": HTTPStream(self.session, hls_url)}
 
 
 __plugin__ = Giniko
