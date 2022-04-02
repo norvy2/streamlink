@@ -1,9 +1,3 @@
-"""
-$description Global live streaming and video on-demand hosting platform.
-$url players.brightcove.net
-$type live, vod
-"""
-
 import logging
 import re
 from urllib.parse import urlparse
@@ -16,9 +10,6 @@ from streamlink.utils.parse import parse_qsd
 
 log = logging.getLogger(__name__)
 
-@pluginmatcher(re.compile(
-    r"https?://players\.brightcove\.net/(?P<account_id>[^/]+)/(?P<player_id>[^/]+)"
-))
 
 class BrightcovePlayer:
     URL_PLAYER = "https://players.brightcove.net/{account_id}/{player_id}/index.html?videoId={video_id}"
@@ -88,6 +79,9 @@ class BrightcovePlayer:
                 yield q, HTTPStream(self.session, source.get("src"))
 
 
+@pluginmatcher(re.compile(
+    r"https?://players\.brightcove\.net/(?P<account_id>[^/]+)/(?P<player_id>[^/]+)/index\.html"
+))
 class Brightcove(Plugin):
     def _get_streams(self):
         video_id = parse_qsd(urlparse(self.url).query).get("videoId")
