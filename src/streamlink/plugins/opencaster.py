@@ -23,7 +23,7 @@ class OpenCaster(Plugin):
             log.error("Not a correct 'opencaster' iframe")
             return
 
-        return {"live": HLSStream(self.session, hls_url, headers={"Origin": "https://www.opencaster.com/"})}
+        return {"live": HLSStream(self.session, hls_url, headers={"Origin": "https://www.opencaster.com"})}
 
 
 __plugin__ = OpenCaster
