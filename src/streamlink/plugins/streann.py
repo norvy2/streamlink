@@ -38,6 +38,8 @@ log = logging.getLogger(__name__)
         evtv\.online/noticias-de-venezuela/
         |
         telecuracao\.com
+        |
+        contactobolivia\.com\.bo
     )
 """, re.VERBOSE))
 class Streann(Plugin):
