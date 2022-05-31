@@ -7,7 +7,7 @@ from streamlink.stream.hls import HLSStream
 
 log = logging.getLogger(__name__)
 
-@pluginmatcher(re.compile(r"https?://teveo\.com\.(co|cu)/player/(.*?)\.js"))
+@pluginmatcher(re.compile(r"https?://teveo\.com\.co/player/(.*?)\.js"))
 class Teveo(Plugin):
     _playlist_re = re.compile(r'"src":"(.*?)"')
     stream_schema = validate.Schema(
